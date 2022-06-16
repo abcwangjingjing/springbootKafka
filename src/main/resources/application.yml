@@ -4,7 +4,7 @@ spring:
     name: KafkaTest
   kafka:
     producer:
-      bootstrap-servers: 47.95.202.84:19092
+      bootstrap-servers: 47.95.202.**:19092
       retries: 0
       acks: 1
       batch-size: 16384 #16K
@@ -14,7 +14,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
     consumer:
-      bootstrap-servers: 47.95.202.84:19092
+      bootstrap-servers: 47.95.202.**:19092
       group-id: CID-iotToExhaust
       enable-auto-commit: true
       auto-commit-interval: 1000
